@@ -7,7 +7,7 @@ adaptorul `zoh` din Zigbee2MQTT.
 
 ### Zigbee2MQTT M1S ZoH Stable
 
-- versiune aplicatie: `0.1.0`;
+- versiune aplicatie: `0.1.1`;
 - Zigbee2MQTT: `2.14.2`;
 - ZoH modificat: `0.2.4-m1s.1`;
 - arhitecturi: `amd64` si `aarch64`;
@@ -45,4 +45,3 @@ adaugata ulterior prin GitHub artifact attestation sau Cosign.
 Acesta este un proiect independent, neoficial. Nu este afiliat sau aprobat de
 Aqara, Xiaomi, Zigbee2MQTT ori Home Assistant. Consulta
 `THIRD_PARTY_NOTICES.md` si `LICENSE`.
-

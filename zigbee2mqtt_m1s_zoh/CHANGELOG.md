@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Corecteaza scriptul de pornire la terminatoare Linux LF.
+- Elimina eroarea de interpretare a executabilului `bashio`.
+
 ## 0.1.0
 
 - Prima versiune a aplicatiei Home Assistant.

@@ -1,4 +1,4 @@
-# Zigbee2MQTT M1S ZoH Stable 0.1.0
+# Zigbee2MQTT M1S ZoH Stable 0.1.1
 
 Acest add-on este destinat exclusiv coordonatorului Aqara M1S JN5189 care
 foloseste adaptorul `zoh`. Foloseste acelasi director de date ca add-onul
@@ -34,6 +34,6 @@ simultan.
 
 ## Componente
 
-- aplicatie: `0.1.0`;
+- aplicatie: `0.1.1`;
 - Zigbee2MQTT: `2.14.2`;
 - ZoH: `0.2.4-m1s.1`.

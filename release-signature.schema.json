@@ -19,7 +19,7 @@
       "required": ["name", "version", "date"],
       "properties": {
         "name": { "type": "string" },
-        "version": { "const": "0.1.0" },
+        "version": { "const": "0.1.1" },
         "date": { "type": "string", "format": "date" }
       },
       "additionalProperties": false
@@ -56,4 +56,3 @@
   },
   "additionalProperties": false
 }
-

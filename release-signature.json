@@ -2,7 +2,7 @@
   "format": "m1s-release-integrity/v1",
   "release": {
     "name": "M1S ZoH Home Assistant App Repository",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "date": "2026-10-08"
   },
   "components": {
@@ -19,13 +19,13 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "size": 334,
-      "sha256": "8fb009153e68b082505bdf91c6f4079d772b93fdca7cb6dbfc5deea27bfdd891"
+      "size": 510,
+      "sha256": "001c712a56a2b6ca4058685c2af357f8a080e36e6bbbb495fab389c58ddb95f3"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/README.md",
       "size": 299,
-      "sha256": "4bf34b99204273d87c447812a641f3c91fbbc6f213f00a7d295a2a9a5d83b9dc"
+      "sha256": "e3d797ac701ebfeb991b3bd11d1f169d2c72507230c0be6c1af6a0d924c39512"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/logo.png",
@@ -45,7 +45,7 @@
     {
       "path": "zigbee2mqtt_m1s_zoh/DOCS.md",
       "size": 1147,
-      "sha256": "4b411c38abbba5d8b4330bb29f16fe5892dba0cabee387d3faf071c484365653"
+      "sha256": "4c0a5205e4f5a12412a047f6bafa346f2a57d98c06a7d1cbc2d00f634de0d8b5"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/Dockerfile",
@@ -55,17 +55,17 @@
     {
       "path": "zigbee2mqtt_m1s_zoh/config.json",
       "size": 1931,
-      "sha256": "c57670f1dda6836577db6edf0e7e9cdfb2ad95b3f28fccc733d8ea99a709bfc9"
+      "sha256": "cbb3af614223ca83da681bfee403c756d2b608a14e7fb1e533a1d456e421b947"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/CHANGELOG.md",
-      "size": 505,
-      "sha256": "28d70227168d9840826b873a334e1214e961149963ce962d6d69b72670c02c9c"
+      "size": 636,
+      "sha256": "5f4c0bfe4f53b72d11d93737103787a3790885160ea2af9bad721196d5063deb"
     },
     {
       "path": "tools/Update-ReleaseIntegrity.ps1",
       "size": 1696,
-      "sha256": "e405a6a264efe6254f14fa78a855edaf8c7cd9f14632ad612af13cc74abcc693"
+      "sha256": "7cedcdf982252286a0ac68173d918b50f26c497e5f551ab01a885498c2a04ed7"
     },
     {
       "path": "source/zigbee-on-host-0.2.4-m1s.1-source.zip",
@@ -84,13 +84,13 @@
     },
     {
       "path": "release-signature.schema.json",
-      "size": 1659,
-      "sha256": "4f1744c6522efa32246896b7ee24c7b2f9773b2e71372ee7e8deff93d81ae71a"
+      "size": 1658,
+      "sha256": "314fe4826aaf15868508f68da53bfceaea5685f60ad4a1c75956dd393a2e2775"
     },
     {
       "path": "README.md",
-      "size": 1651,
-      "sha256": "21faab06188f3cbf853012ae397d8cdaf13355a97867e63fba79ee6e7d03e2f7"
+      "size": 1650,
+      "sha256": "819f2df3e41d47a65616e31cba20b202815bf6c89b54ac75025f8346bbc58643"
     },
     {
       "path": "LICENSE",
@@ -104,8 +104,8 @@
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/rootfs/docker-entrypoint.sh",
-      "size": 4048,
-      "sha256": "5a1b9381689e711832373b19c6feaaa602b86f7e96d7e36e38ae15a7ba6ca34e"
+      "size": 3945,
+      "sha256": "6aa34f756ab93590bc951ae80596259e696cd1eabdd7a3a45d27a8994818fba6"
     }
   ]
 }
