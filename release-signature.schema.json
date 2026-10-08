@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/m1s-zoh/release-signature.schema.json",
+  "title": "M1S ZoH release integrity manifest",
+  "type": "object",
+  "required": [
+    "format",
+    "release",
+    "components",
+    "integrity",
+    "files"
+  ],
+  "properties": {
+    "format": {
+      "const": "m1s-release-integrity/v1"
+    },
+    "release": {
+      "type": "object",
+      "required": ["name", "version", "date"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "const": "0.1.0" },
+        "date": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "components": {
+      "type": "object",
+      "required": ["zigbee2mqtt", "zigbee_on_host", "zigbee_on_host_source_commit"],
+      "additionalProperties": { "type": "string" }
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "kind", "public_key_signature"],
+      "properties": {
+        "algorithm": { "const": "SHA-256" },
+        "kind": { "const": "checksum-manifest" },
+        "public_key_signature": { "type": "boolean" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "size", "sha256"],
+        "properties": {
+          "path": { "type": "string" },
+          "size": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

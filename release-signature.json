@@ -1,0 +1,111 @@
+{
+  "format": "m1s-release-integrity/v1",
+  "release": {
+    "name": "M1S ZoH Home Assistant App Repository",
+    "version": "0.1.0",
+    "date": "2026-10-08"
+  },
+  "components": {
+    "zigbee2mqtt": "2.14.2",
+    "zigbee_on_host": "0.2.4-m1s.1",
+    "zigbee_on_host_source_commit": "8e880bf37630"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "kind": "checksum-manifest",
+    "public_key_signature": false,
+    "note": "Checksums verify content integrity. Publisher identity is not signed by a private key in this release."
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 334,
+      "sha256": "8fb009153e68b082505bdf91c6f4079d772b93fdca7cb6dbfc5deea27bfdd891"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/README.md",
+      "size": 299,
+      "sha256": "4bf34b99204273d87c447812a641f3c91fbbc6f213f00a7d295a2a9a5d83b9dc"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/logo.png",
+      "size": 3702,
+      "sha256": "511f4d6ec38d4d2e22056c1408b7ddd2d0d1d479f3564f775b82fad92c4a6c4e"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/LICENSE",
+      "size": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/icon.png",
+      "size": 8357,
+      "sha256": "e87d0948c08a6744a0b2a11c19d2e8b1ea53c9d94dc747a3a3b528dcae401198"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/DOCS.md",
+      "size": 1147,
+      "sha256": "4b411c38abbba5d8b4330bb29f16fe5892dba0cabee387d3faf071c484365653"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/Dockerfile",
+      "size": 2678,
+      "sha256": "a12d840f2640070fefa104a8c4dfffbace09827d257a444b33a49a1a1796c3bb"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/config.json",
+      "size": 1931,
+      "sha256": "c57670f1dda6836577db6edf0e7e9cdfb2ad95b3f28fccc733d8ea99a709bfc9"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/CHANGELOG.md",
+      "size": 505,
+      "sha256": "28d70227168d9840826b873a334e1214e961149963ce962d6d69b72670c02c9c"
+    },
+    {
+      "path": "tools/Update-ReleaseIntegrity.ps1",
+      "size": 1696,
+      "sha256": "e405a6a264efe6254f14fa78a855edaf8c7cd9f14632ad612af13cc74abcc693"
+    },
+    {
+      "path": "source/zigbee-on-host-0.2.4-m1s.1-source.zip",
+      "size": 453689,
+      "sha256": "53a3088802f8047bc0b42eba24acb0c36708b93433324e08047a7c962389d762"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 1216,
+      "sha256": "0723b48d955fd9867c0436c37bb68a261e20157bb7c69b56b7c346c0be1ba6cf"
+    },
+    {
+      "path": "repository.yaml",
+      "size": 45,
+      "sha256": "7dc40b34324d90f07662d31b5631892147b10e07c6b7019fe1aad3761d2eb8d7"
+    },
+    {
+      "path": "release-signature.schema.json",
+      "size": 1659,
+      "sha256": "4f1744c6522efa32246896b7ee24c7b2f9773b2e71372ee7e8deff93d81ae71a"
+    },
+    {
+      "path": "README.md",
+      "size": 1651,
+      "sha256": "21faab06188f3cbf853012ae397d8cdaf13355a97867e63fba79ee6e7d03e2f7"
+    },
+    {
+      "path": "LICENSE",
+      "size": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/packages/zigbee-on-host-0.2.4-m1s.1.tgz",
+      "size": 262982,
+      "sha256": "ecd5d8039d0923071c0fc4317dceac5f34a2dac6fcd7022bf59517b09484830b"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/rootfs/docker-entrypoint.sh",
+      "size": 4048,
+      "sha256": "5a1b9381689e711832373b19c6feaaa602b86f7e96d7e36e38ae15a7ba6ca34e"
+    }
+  ]
+}

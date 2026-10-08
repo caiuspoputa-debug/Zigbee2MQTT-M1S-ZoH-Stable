@@ -1,0 +1,48 @@
+# M1S ZoH Apps
+
+Repository Home Assistant pentru coordonatorul Aqara M1S JN5189 folosit prin
+adaptorul `zoh` din Zigbee2MQTT.
+
+## Aplicatie inclusa
+
+### Zigbee2MQTT M1S ZoH Stable
+
+- versiune aplicatie: `0.1.0`;
+- Zigbee2MQTT: `2.14.2`;
+- ZoH modificat: `0.2.4-m1s.1`;
+- arhitecturi: `amd64` si `aarch64`;
+- stare: experimentala, pentru validare pe coordonatorul M1S real.
+
+Corectiile ZoH trateaza cadre MAC complete de 127 octeti, fragmenteaza
+mesajele Link Status mari, elimina controlat cadrele HDLC/Spinel corupte si
+protejeaza salvarea starii retelei.
+
+## Instalare din repository
+
+1. Publica continutul acestui director la radacina unui repository GitHub.
+2. In Home Assistant deschide `Setari > Apps > App store`.
+3. Adauga adresa repository-ului si reincarca magazinul.
+4. Instaleaza `Zigbee2MQTT M1S ZoH Stable`.
+5. Opreste Zigbee2MQTT standard inainte de a porni aceasta aplicatie.
+
+Nu porni niciodata doua instante Zigbee2MQTT pe acelasi coordonator sau cu
+acelasi director de date.
+
+## Instalare locala
+
+Copiaza doar directorul `zigbee2mqtt_m1s_zoh` in `/addons/`, reincarca lista
+de aplicatii locale si instaleaza-l de acolo.
+
+## Integritate
+
+`release-signature.json` si `SHA256SUMS.txt` contin amprente SHA-256 pentru
+fisierele versiunii. Acestea verifica integritatea continutului, dar nu sunt o
+semnatura de identitate cu o cheie privata. O semnatura de publicare poate fi
+adaugata ulterior prin GitHub artifact attestation sau Cosign.
+
+## Licente si afiliere
+
+Acesta este un proiect independent, neoficial. Nu este afiliat sau aprobat de
+Aqara, Xiaomi, Zigbee2MQTT ori Home Assistant. Consulta
+`THIRD_PARTY_NOTICES.md` si `LICENSE`.
+
