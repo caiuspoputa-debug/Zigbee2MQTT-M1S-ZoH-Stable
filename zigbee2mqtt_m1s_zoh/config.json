@@ -1,8 +1,8 @@
 {
   "name": "Zigbee2MQTT M1S ZoH Stable",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "slug": "zigbee2mqtt_m1s_zoh",
-  "description": "Zigbee2MQTT 2.14.2 cu ZoH 0.2.4-m1s.1 intarit pentru coordonatorul Aqara M1S JN5189",
+  "description": "Zigbee2MQTT 2.14.2 cu ZoH 0.2.4-m1s.2: reparare sigura a adreselor scurte",
   "stage": "experimental",
   "uart": true,
   "udev": true,
@@ -15,7 +15,8 @@
     "aarch64",
     "amd64"
   ],
-  "boot": "manual",
+  "boot": "auto",
+  "watchdog": true,
   "init": false,
   "ingress": true,
   "timeout": 30,
@@ -58,7 +59,13 @@
       "log": false
     },
     "mqtt": {},
-    "serial": {}
+    "serial": {},
+    "coordinator_readiness": {
+      "enabled": false,
+      "username": "admin",
+      "password": "",
+      "expected_mac": ""
+    }
   },
   "schema": {
     "data_path": "str",
@@ -85,6 +92,12 @@
       "rtscts": "bool?"
     },
     "watchdog": "str?",
+    "coordinator_readiness": {
+      "enabled": "bool?",
+      "username": "str?",
+      "password": "password?",
+      "expected_mac": "str?"
+    },
     "force_onboarding": "bool?"
   }
 }

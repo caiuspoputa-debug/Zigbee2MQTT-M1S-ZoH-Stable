@@ -1,4 +1,4 @@
-# Zigbee2MQTT M1S ZoH Stable 0.1.1
+# Zigbee2MQTT M1S ZoH Stable 0.1.2
 
 Acest add-on este destinat exclusiv coordonatorului Aqara M1S JN5189 care
 foloseste adaptorul `zoh`. Foloseste acelasi director de date ca add-onul
@@ -12,7 +12,7 @@ porturi.
 
 La pornire, jurnalul trebuie sa contina:
 
-`M1S ZoH hardened package: 0.2.4-m1s.1`
+`M1S ZoH hardened package: 0.2.4-m1s.2`
 
 Configuratia Zigbee2MQTT trebuie sa pastreze `serial.adapter: zoh` si aceeasi
 adresa a coordonatorului folosita in prezent.
@@ -24,8 +24,15 @@ adresa a coordonatorului folosita in prezent.
 2. Pastreaza `data_path` la `/config/zigbee2mqtt`.
 3. Opreste aplicatia Zigbee2MQTT standard.
 4. Porneste aceasta aplicatie si urmareste jurnalul.
-5. Confirma mesajul `M1S ZoH hardened package: 0.2.4-m1s.1`, apoi testeaza o
-   comanda Zigbee.
+5. Confirma mesajul `M1S ZoH hardened package: 0.2.4-m1s.2`, apoi testeaza o
+   comanda catre un router care a raportat recent LINK_STATUS.
+
+## Asteptarea coordinatorului
+
+Aplicatia porneste automat, iar watchdog-ul este activ. Gateway-ul de readiness
+este dezactivat implicit deoarece necesita markerul compatibil pe coordinator.
+Nu-l activa pana cand markerul este instalat si verificat. Cu gateway-ul oprit,
+ZoH incearca conectarea normal; nu modifica automat setarile coordinatorului.
 
 ## Revenire
 
@@ -34,6 +41,6 @@ simultan.
 
 ## Componente
 
-- aplicatie: `0.1.1`;
+- aplicatie: `0.1.2`;
 - Zigbee2MQTT: `2.14.2`;
-- ZoH: `0.2.4-m1s.1`.
+- ZoH: `0.2.4-m1s.2`.

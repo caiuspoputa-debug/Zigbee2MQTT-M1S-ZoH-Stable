@@ -93,6 +93,14 @@ function export_config() {
 export_config 'mqtt'
 export_config 'serial'
 
+export M1S_READY_ENABLED="$(bashio::config 'coordinator_readiness.enabled')"
+
+for key in username password expected_mac; do
+    if bashio::config.has_value "coordinator_readiness.${key}"; then
+        export "M1S_READY_$(bashio::string.upper "$key")=$(bashio::config "coordinator_readiness.${key}")"
+    fi
+done
+
 export TZ="$(bashio::supervisor.timezone)"
 
 if (bashio::config.is_empty 'mqtt' || ! (bashio::config.has_value 'mqtt.server' || bashio::config.has_value 'mqtt.user' || bashio::config.has_value 'mqtt.password')) && bashio::var.has_value "$(bashio::services 'mqtt')"; then
@@ -107,4 +115,4 @@ fi
 
 bashio::log.info "Starting Zigbee2MQTT..."
 cd /app
-exec node index.js
+exec node /app/m1s-coordinator-gate.js

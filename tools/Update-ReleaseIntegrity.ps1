@@ -27,12 +27,12 @@ $manifest = [ordered]@{
     format = 'm1s-release-integrity/v1'
     release = [ordered]@{
         name = 'M1S ZoH Home Assistant App Repository'
-        version = '0.1.1'
-        date = '2026-10-08'
+        version = '0.1.2'
+        date = '2026-10-11'
     }
     components = [ordered]@{
         zigbee2mqtt = '2.14.2'
-        zigbee_on_host = '0.2.4-m1s.1'
+        zigbee_on_host = '0.2.4-m1s.2'
         zigbee_on_host_source_commit = '8e880bf37630'
     }
     integrity = [ordered]@{
@@ -51,4 +51,4 @@ $manifest |
 $sumLines = $files | ForEach-Object { '{0}  {1}' -f $_.sha256, $_.path }
 $sumLines | Set-Content -LiteralPath $sumsPath -Encoding ascii
 
-Write-Host "Generated $($files.Count) file checksums for release 0.1.1."
+Write-Host "Generated $($files.Count) file checksums for release 0.1.2."

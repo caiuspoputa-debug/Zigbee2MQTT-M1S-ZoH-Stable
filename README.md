@@ -7,15 +7,18 @@ adaptorul `zoh` din Zigbee2MQTT.
 
 ### Zigbee2MQTT M1S ZoH Stable
 
-- versiune aplicatie: `0.1.1`;
+- versiune aplicatie: `0.1.2`;
 - Zigbee2MQTT: `2.14.2`;
-- ZoH modificat: `0.2.4-m1s.1`;
+- ZoH modificat: `0.2.4-m1s.2`;
 - arhitecturi: `amd64` si `aarch64`;
 - stare: experimentala, pentru validare pe coordonatorul M1S real.
 
-Corectiile ZoH trateaza cadre MAC complete de 127 octeti, fragmenteaza
-mesajele Link Status mari, elimina controlat cadrele HDLC/Spinel corupte si
-protejeaza salvarea starii retelei.
+ZoH trateaza cadre MAC complete de 127 octeti, fragmenteaza mesajele Link
+Status mari, elimina controlat cadrele HDLC/Spinel corupte, recupereaza
+adresele scurte doar pentru dispozitive autorizate si protejeaza salvarea
+starii retelei. Aplicatia porneste automat cu watchdog. Asteptarea optionala
+a markerului coordinatorului ramane dezactivata pana la instalarea partii
+compatibile pe coordinator.
 
 ## Instalare din repository
 

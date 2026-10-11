@@ -2,12 +2,12 @@
   "format": "m1s-release-integrity/v1",
   "release": {
     "name": "M1S ZoH Home Assistant App Repository",
-    "version": "0.1.1",
-    "date": "2026-10-08"
+    "version": "0.1.2",
+    "date": "2026-10-11"
   },
   "components": {
     "zigbee2mqtt": "2.14.2",
-    "zigbee_on_host": "0.2.4-m1s.1",
+    "zigbee_on_host": "0.2.4-m1s.2",
     "zigbee_on_host_source_commit": "8e880bf37630"
   },
   "integrity": {
@@ -19,13 +19,23 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "size": 510,
-      "sha256": "001c712a56a2b6ca4058685c2af357f8a080e36e6bbbb495fab389c58ddb95f3"
+      "size": 1195,
+      "sha256": "adff27ffb0332c5c93eab4896a0cf7272f2258ff6ce77c736d0950a83ed597e7"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/rootfs/docker-entrypoint.sh",
+      "size": 4278,
+      "sha256": "5ce3e653a2661b922ae0da2b6d4b24e56d503b8bc85383c9c11a9bf0c9372ea5"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/packages/zigbee-on-host-0.2.4-m1s.2.tgz",
+      "size": 247927,
+      "sha256": "200440f416ef46f525ae1d2eeba391e84d164b476bad157e50e81286ce8c1f1c"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/README.md",
-      "size": 299,
-      "sha256": "e3d797ac701ebfeb991b3bd11d1f169d2c72507230c0be6c1af6a0d924c39512"
+      "size": 749,
+      "sha256": "8785dbac9be9b39a32c32ed15a295225ae52280cfb3952161b30110b1ce398fd"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/logo.png",
@@ -44,38 +54,43 @@
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/DOCS.md",
-      "size": 1147,
-      "sha256": "4c0a5205e4f5a12412a047f6bafa346f2a57d98c06a7d1cbc2d00f634de0d8b5"
+      "size": 1540,
+      "sha256": "9f193988adf3a38952ec45a8f9a5132e0488a3a02f163bffd2d954fe38d935d0"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/Dockerfile",
-      "size": 2678,
-      "sha256": "a12d840f2640070fefa104a8c4dfffbace09827d257a444b33a49a1a1796c3bb"
+      "size": 3033,
+      "sha256": "c72a9f5cd9149c2edeb967e0ca7d86e1f83926ce7c937b6a396cd03bbff939be"
+    },
+    {
+      "path": "zigbee2mqtt_m1s_zoh/rootfs/app/m1s-coordinator-gate.js",
+      "size": 15938,
+      "sha256": "774c225179fc2b16d8e0a6f1dd19b0c71c98c5e5fc041559a96e2370b482c34e"
     },
     {
       "path": "zigbee2mqtt_m1s_zoh/config.json",
-      "size": 1931,
-      "sha256": "cbb3af614223ca83da681bfee403c756d2b608a14e7fb1e533a1d456e421b947"
+      "size": 2225,
+      "sha256": "9f9c5a3fc239da05d649ae05b2c381d1600fb396461d9761700f632964b795b5"
     },
     {
-      "path": "zigbee2mqtt_m1s_zoh/CHANGELOG.md",
-      "size": 636,
-      "sha256": "5f4c0bfe4f53b72d11d93737103787a3790885160ea2af9bad721196d5063deb"
+      "path": "tools/tests/coordinator-gate.test.cjs",
+      "size": 8410,
+      "sha256": "3b97e0b203e45fe438a845a2e7fa1938d1e4c799b651e970c88c29afb143dfa0"
     },
     {
       "path": "tools/Update-ReleaseIntegrity.ps1",
       "size": 1696,
-      "sha256": "7cedcdf982252286a0ac68173d918b50f26c497e5f551ab01a885498c2a04ed7"
+      "sha256": "f358f99f87f4edc116bd48cf334b8a23d14c1ca2f42cd99740c39db7249a706c"
     },
     {
-      "path": "source/zigbee-on-host-0.2.4-m1s.1-source.zip",
-      "size": 453689,
-      "sha256": "53a3088802f8047bc0b42eba24acb0c36708b93433324e08047a7c962389d762"
+      "path": "source/zigbee-on-host-0.2.4-m1s.2-source.zip",
+      "size": 449511,
+      "sha256": "7e97ad9729a86f5359a579e317ce5415ee78cd7ee7b4e3b04e9063452b8a3df0"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "size": 1216,
-      "sha256": "0723b48d955fd9867c0436c37bb68a261e20157bb7c69b56b7c346c0be1ba6cf"
+      "size": 1215,
+      "sha256": "676a53bd3d6dc7ac9d31c47641a2738c6f7ea6540e09e1d6912170cfe835c430"
     },
     {
       "path": "repository.yaml",
@@ -85,12 +100,12 @@
     {
       "path": "release-signature.schema.json",
       "size": 1658,
-      "sha256": "314fe4826aaf15868508f68da53bfceaea5685f60ad4a1c75956dd393a2e2775"
+      "sha256": "d0369d2ebc3378206cb2bfb9ae7fc344a8d426ea5b99d9b58619559c9010a208"
     },
     {
       "path": "README.md",
-      "size": 1650,
-      "sha256": "819f2df3e41d47a65616e31cba20b202815bf6c89b54ac75025f8346bbc58643"
+      "size": 1866,
+      "sha256": "604a1db0a59ffbccbe86b0777b4062ae5502588d9b94faa4d24f55c37628771e"
     },
     {
       "path": "LICENSE",
@@ -98,14 +113,14 @@
       "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
     },
     {
-      "path": "zigbee2mqtt_m1s_zoh/packages/zigbee-on-host-0.2.4-m1s.1.tgz",
-      "size": 262982,
-      "sha256": "ecd5d8039d0923071c0fc4317dceac5f34a2dac6fcd7022bf59517b09484830b"
+      "path": "zigbee2mqtt_m1s_zoh/CHANGELOG.md",
+      "size": 1059,
+      "sha256": "b5c2c9318b6bb98e01e2508f8074acf325b81559b34773fefd39bef2409442ef"
     },
     {
-      "path": "zigbee2mqtt_m1s_zoh/rootfs/docker-entrypoint.sh",
-      "size": 3945,
-      "sha256": "6aa34f756ab93590bc951ae80596259e696cd1eabdd7a3a45d27a8994818fba6"
+      "path": "zigbee2mqtt_m1s_zoh/rootfs/app/m1s-readiness-probe.js",
+      "size": 1825,
+      "sha256": "b5357e6bd175211cd5f36d71754c913631e60f49b1bc13004ab079494ee5852d"
     }
   ]
 }

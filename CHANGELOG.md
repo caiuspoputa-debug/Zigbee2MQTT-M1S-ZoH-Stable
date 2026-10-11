@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.2 - 2026-10-11
+
+- Reconcile la adresa scurta raportata de un dispozitiv deja cunoscut si autorizat in LINK_STATUS.
+- Refuza reconcilierea daca adresa este deja asociata altui IEEE; persista imediat asocierea reparata.
+- Serializeaza salvarile periodice ale starii si nu opreste procesarea radio daca salvarea unei corectii esueaza.
+- Porneste App-ul automat si activeaza watchdog-ul Home Assistant.
+- Pastreaza gateway-ul de readiness optional si dezactivat pana la instalarea markerului compatibil pe coordinator.
+- Corecteaza verificarea de build pentru a valida efectiv patch-ul inclus in pachetul ZoH.
+- Normalizeaza terminatoarele scriptului de pornire in imaginea Linux.
+
 ## 0.1.1 - 2026-10-08
 
 - Corecteaza terminatoarele de linie ale scriptului de pornire la format LF.

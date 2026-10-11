@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2
+
+- Repara adresele scurte ale routerelor cunoscute si autorizate pe baza LINK_STATUS.
+- Refuza suprascrierea unei adrese detinute de alt IEEE si salveaza corectia imediat.
+- Serializeaza salvarile periodice; o eroare de salvare este raportata fara sa opreasca procesarea radio.
+- Pornire automata si watchdog Home Assistant.
+- Gateway-ul coordinatorului este optional pana cand markerul compatibil este instalat.
+
 ## 0.1.1
 
 - Corecteaza scriptul de pornire la terminatoare Linux LF.
