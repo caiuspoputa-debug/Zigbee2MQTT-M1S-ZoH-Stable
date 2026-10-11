@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4 - 2026-10-11
+
+- Inlocuieste maparea legacy `addon_config` cu `app_config`, acceptata de manifestul curent Home Assistant.
+- Schimba watchdog-ul din boolean in URL TCP valid si declara explicit portul ingress 8099.
+- Nu modifica imaginea, ZoH, configuratia Zigbee sau datele persistente.
+
 ## 0.1.3 - 2026-10-11
 
 - Bumpa versiunea aplicatiei pentru ca Home Assistant sa detecteze update-ul fata de 0.1.2.

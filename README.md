@@ -7,7 +7,7 @@ adaptorul `zoh` din Zigbee2MQTT.
 
 ### Zigbee2MQTT M1S ZoH Stable
 
-- versiune aplicatie: `0.1.3`;
+- versiune aplicatie: `0.1.4`;
 - Zigbee2MQTT: `2.14.2`;
 - ZoH modificat: `0.2.4-m1s.2`;
 - arhitecturi: `amd64` si `aarch64`;
@@ -19,6 +19,9 @@ adresele scurte doar pentru dispozitive autorizate si protejeaza salvarea
 starii retelei. Aplicatia porneste automat cu watchdog. Asteptarea optionala
 a markerului coordinatorului ramane dezactivata pana la instalarea partii
 compatibile pe coordinator.
+
+Manifestul foloseste tipurile actuale Home Assistant pentru configurarea
+persistenta, watchdog si ingress.
 
 ## Instalare din repository
 

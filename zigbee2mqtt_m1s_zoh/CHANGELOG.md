@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+
+- Actualizeaza maparea persistenta la tipul Home Assistant `app_config`.
+- Configureaza watchdog-ul Home Assistant cu verificare TCP pe portul ingress.
+- Declara explicit portul ingress 8099; codul ZoH si reteaua Zigbee nu se schimba.
+
 ## 0.1.3
 
 - Bump de versiune pentru detectarea update-ului Home Assistant fata de 0.1.2; ZoH ramane `0.2.4-m1s.2`.

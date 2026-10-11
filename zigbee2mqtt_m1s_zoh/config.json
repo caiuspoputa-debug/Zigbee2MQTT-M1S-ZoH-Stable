@@ -1,6 +1,6 @@
 {
   "name": "Zigbee2MQTT M1S ZoH Stable",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "slug": "zigbee2mqtt_m1s_zoh",
   "description": "Zigbee2MQTT 2.14.2 cu ZoH 0.2.4-m1s.2: reparare sigura a adreselor scurte",
   "stage": "experimental",
@@ -16,7 +16,7 @@
     "amd64"
   ],
   "boot": "auto",
-  "watchdog": true,
+  "watchdog": "tcp://[HOST]:[PORT:8099]",
   "init": false,
   "ingress": true,
   "timeout": 30,
@@ -32,7 +32,7 @@
       "path": "/config"
     },
     {
-      "type": "addon_config",
+      "type": "app_config",
       "read_only": false,
       "path": "/addon_config"
     },
@@ -49,6 +49,7 @@
     "8485/tcp": "Socat tcp-listen port",
     "8099/tcp": "Frontend tcp-listen port"
   },
+  "ingress_port": 8099,
   "options": {
     "data_path": "/config/zigbee2mqtt",
     "socat": {
