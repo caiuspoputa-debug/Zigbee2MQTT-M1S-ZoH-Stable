@@ -1,6 +1,6 @@
 {
   "name": "Zigbee2MQTT M1S ZoH Stable",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "slug": "zigbee2mqtt_m1s_zoh",
   "description": "Zigbee2MQTT 2.14.2 cu ZoH 0.2.4-m1s.2: reparare sigura a adreselor scurte",
   "stage": "experimental",
@@ -42,7 +42,7 @@
     }
   ],
   "ports": {
-    "8485/tcp": 8485,
+    "8485/tcp": null,
     "8099/tcp": null
   },
   "ports_description": {
@@ -62,7 +62,7 @@
     "mqtt": {},
     "serial": {},
     "coordinator_readiness": {
-      "enabled": false,
+      "enabled": true,
       "username": "admin",
       "password": "",
       "expected_mac": ""

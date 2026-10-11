@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.5
+
+- Dezactiveaza maparea host a portului optional socat 8485 pentru a preveni conflictul cu App-ul oficial.
+- Activeaza implicit readiness gate pentru instalari noi; optiunile existente din Home Assistant nu sunt rescrise automat.
+- Nu schimba baza de date, canalul, PAN ID, cheia de retea sau driverul ZoH.
+
 ## 0.1.4
 
 - Actualizeaza maparea persistenta la tipul Home Assistant `app_config`.

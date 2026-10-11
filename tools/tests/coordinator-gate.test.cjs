@@ -2,12 +2,22 @@
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const net = require('node:net');
+const appConfig = require('../../zigbee2mqtt_m1s_zoh/config.json');
 const {supervise, validateStatus, resolveOptions, TelnetFilter, healthy, readStatus, spawnZ2M, sleep} =
     require('../../zigbee2mqtt_m1s_zoh/rootfs/app/m1s-coordinator-gate.js');
 const {statusCommand} = require('../../zigbee2mqtt_m1s_zoh/rootfs/app/m1s-readiness-probe.js');
 const good = (extra = {}) => ({protocol: 1, ready: true, reason: 'ready', wifi_mac: '00:11:22:33:44:55',
     boot_id: '11111111-1111-1111-1111-111111111111', relay_pid: 123, relay_port: 1886, relay_start: '500', connections: 0, ...extra});
 const options = {enabled: true, relayPort: 1886, pollMs: 1, runtimePollMs: 1, retryBaseMs: 1};
+
+test('M1S app avoids host port conflict and gates new installs by default', () => {
+    assert.equal(appConfig.version, '0.1.5');
+    assert.equal(appConfig.ports['8485/tcp'], null);
+    assert.equal(appConfig.options.socat.enabled, false);
+    assert.equal(appConfig.options.coordinator_readiness.enabled, true);
+    assert.equal(appConfig.ports['8099/tcp'], null);
+    assert.equal(appConfig.ingress_port, 8099);
+});
 
 test('validates fresh identity and rejects malformed/occupied readiness', () => {
     assert.equal(validateStatus(good(), options).ready, true);

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5 - 2026-10-11
+
+- Dezactiveaza maparea host pentru portul optional socat `8485`, eliminand conflictul cu App-ul Zigbee2MQTT standard cand acesta este instalat dar oprit.
+- Activeaza implicit verificarea read-only de readiness pentru instalari noi; asteapta doua probe stabile ale relay-ului coordinatorului inainte sa porneasca Zigbee2MQTT.
+- Pastreaza Zigbee2MQTT 2.14.2, ZoH 0.2.4-m1s.2, baza de date si configuratia retelei.
+- Corecteaza documentatia care ramanea la versiunile 0.1.3/0.1.4.
+- La actualizarile instalate, Home Assistant pastreaza optiunile existente; readiness trebuie activata manual daca era deja oprita.
+
 ## 0.1.4 - 2026-10-11
 
 - Inlocuieste maparea legacy `addon_config` cu `app_config`, acceptata de manifestul curent Home Assistant.
