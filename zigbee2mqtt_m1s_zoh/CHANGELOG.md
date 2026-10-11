@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Bump de versiune pentru detectarea update-ului Home Assistant fata de 0.1.2; ZoH ramane `0.2.4-m1s.2`.
+
 ## 0.1.2
 
 - Repara adresele scurte ale routerelor cunoscute si autorizate pe baza LINK_STATUS.

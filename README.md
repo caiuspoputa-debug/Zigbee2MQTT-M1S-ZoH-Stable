@@ -7,7 +7,7 @@ adaptorul `zoh` din Zigbee2MQTT.
 
 ### Zigbee2MQTT M1S ZoH Stable
 
-- versiune aplicatie: `0.1.2`;
+- versiune aplicatie: `0.1.3`;
 - Zigbee2MQTT: `2.14.2`;
 - ZoH modificat: `0.2.4-m1s.2`;
 - arhitecturi: `amd64` si `aarch64`;

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3 - 2026-10-11
+
+- Bumpa versiunea aplicatiei pentru ca Home Assistant sa detecteze update-ul fata de 0.1.2.
+- Pastreaza ZoH `0.2.4-m1s.2`; nu introduce modificari de protocol sau de configuratie Zigbee.
+
 ## 0.1.2 - 2026-10-11
 
 - Reconcile la adresa scurta raportata de un dispozitiv deja cunoscut si autorizat in LINK_STATUS.

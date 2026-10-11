@@ -1,6 +1,6 @@
 # Zigbee2MQTT M1S ZoH Stable
 
-Home Assistant App `0.1.2` pentru testarea ZoH `0.2.4-m1s.2` cu
+Home Assistant App `0.1.3` pentru testarea ZoH `0.2.4-m1s.2` cu
 Zigbee2MQTT `2.14.2` pe coordonatorul Aqara M1S JN5189.
 
 Citeste `DOCS.md` inainte de instalare. Opreste Zigbee2MQTT standard inainte
